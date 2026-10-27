@@ -73,9 +73,9 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    padding: 120px 8% 80px;
-    gap: 70px;
+    min-height: 0;
+    padding: 100px 8% 45px;
+    gap: 50px;
 }
 
 .hero-content{
