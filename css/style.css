@@ -544,3 +544,21 @@ ul{
         padding: 45px 5% 25px;
     }
 }
+
+/* REDUCE EXCESSIVE VERTICAL SPACE */
+
+@media (min-width: 769px) {
+    .hero {
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 0;
+        padding-top: 100px;
+        padding-bottom: 45px;
+    }
+}
