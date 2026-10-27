@@ -456,237 +456,12 @@ ul{
    
 }
 
-/* =========================
-   MOBILE RESPONSIVE DESIGN
-   ========================= */
+/* COMPACT MOBILE DESIGN */
 
 @media (max-width: 768px) {
-
-    /* NAVBAR */
     .navbar {
-        position: relative;
-        padding: 20px 5%;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .logo {
-        font-size: 1.7rem;
-        white-space: nowrap;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 18px;
-        width: 100%;
-    }
-
-    .nav-links a {
-        font-size: 0.85rem;
-    }
-
-    .nav-icons {
+        padding: 18px 5%;
         gap: 12px;
-        font-size: 1rem;
-    }
-
-    /* HERO */
-    .hero {
-        flex-direction: column;
-        align-items: flex-start;
-        min-height: auto;
-        padding: 65px 5% 50px;
-        gap: 35px;
-    }
-
-    .hero-content,
-    .hero-image {
-        width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: clamp(2.5rem, 10vw, 3.5rem);
-        line-height: 1.12;
-        overflow-wrap: break-word;
-    }
-
-    .tagline,
-    .section-tag {
-        font-size: 0.75rem;
-        letter-spacing: 2px;
-    }
-
-    .hero-content p {
-        font-size: 0.95rem;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-    }
-
-    /* FEATURE BENEFITS */
-    .features {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-        padding: 40px 5%;
-    }
-
-    .feature-box {
-        padding: 25px 15px;
-        min-width: 0;
-    }
-
-    .feature-box h3 {
-        font-size: 1rem;
-    }
-
-    .feature-box p {
-        font-size: 0.85rem;
-        overflow-wrap: break-word;
-    }
-
-    /* ABOUT */
-    .about {
-        flex-direction: column;
-        gap: 35px;
-        padding: 65px 5%;
-    }
-
-    .about-image,
-    .about-content {
-        width: 100%;
-    }
-
-    .about-image img {
-        max-width: 100%;
-    }
-
-    .about-content h2,
-    .section-title h2,
-    .newsletter-content h2 {
-        font-size: 2.3rem;
-    }
-
-    /* PRODUCTS */
-    .featured,
-    .reviews {
-        padding: 65px 5%;
-    }
-
-    .section-title {
-        margin-bottom: 35px;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-    }
-
-    .product-card {
-        padding: 18px 12px;
-        min-width: 0;
-    }
-
-    .product-card img {
-        width: 100%;
-        max-width: 150px;
-    }
-
-    .product-card h3 {
-        font-size: 0.95rem;
-        overflow-wrap: break-word;
-    }
-
-    .product-card p {
-        font-size: 1rem;
-    }
-
-    /* REVIEWS */
-    .review-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .review-card {
-        padding: 30px 22px;
-    }
-
-    /* NEWSLETTER */
-    .newsletter {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 30px;
-        padding: 65px 5%;
-    }
-
-    .newsletter-content,
-    .newsletter-image {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .newsletter-form input {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .newsletter-form button,
-    .newsletter-form .btn {
-        align-self: flex-start;
-    }
-
-    .newsletter-image img {
-        max-width: 100%;
-    }
-
-    /* FOOTER */
-    .footer {
-        padding: 50px 5% 25px;
-    }
-
-    .footer-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 30px 20px;
-    }
-
-    .footer-logo {
-        grid-column: 1 / -1;
-    }
-
-    .footer-logo p {
-        max-width: 300px;
-    }
-
-    .footer-links h3,
-    .footer-social h3 {
-        font-size: 1rem;
-    }
-
-    .footer-links a,
-    .footer-social a {
-        font-size: 0.9rem;
-        overflow-wrap: anywhere;
-    }
-
-    .copyright {
-        font-size: 0.85rem;
-        line-height: 1.7;
-    }
-}
-
-/* SMALL PHONES */
-@media (max-width: 380px) {
-
-    .navbar {
-        padding-left: 4%;
-        padding-right: 4%;
     }
 
     .logo {
@@ -694,30 +469,78 @@ ul{
     }
 
     .nav-links {
-        gap: 10px 14px;
+        gap: 10px 16px;
     }
 
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        padding: 45px 5% 35px;
+        gap: 25px;
     }
 
     .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: clamp(2.2rem, 7vw, 3rem);
+        line-height: 1.12;
+        margin-bottom: 18px;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .tagline {
+        font-size: 0.72rem;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+    }
+
+    .btn {
+        padding: 12px 26px;
+        font-size: 0.9rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        border-radius: 18px;
     }
 
     .features {
-        gap: 10px;
+        padding: 35px 5%;
+        gap: 12px;
     }
 
     .feature-box {
-        padding: 22px 10px;
+        padding: 22px 12px;
+        border-radius: 18px;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr;
+    .about,
+    .featured,
+    .reviews,
+    .newsletter {
+        padding: 60px 5%;
     }
 
-    .footer-container {
-        gap: 25px 15px;
+    .about-content h2,
+    .section-title h2,
+    .newsletter-content h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        padding: 18px 12px;
+    }
+
+    .review-card {
+        padding: 25px 20px;
+    }
+
+    .footer {
+        padding: 45px 5% 25px;
     }
 }
